@@ -13,9 +13,9 @@
             "sizes": "512x512"
         }
     ],
-    "start_url": "/",
+    "start_url": "/Portfolio",
     "background_color": "#3890fe",
     "display": "standalone",
-    "scope": "/",
+    "scope": "/Portfolio",
     "theme_color": "#3890fe"
 }
