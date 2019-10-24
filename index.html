@@ -326,7 +326,7 @@
                   <div class="divider-custom-line"></div>
                 </div>
                 <!-- Portfolio Modal - Image -->
-                <img class="img-fluid rounded mb-5 portfolio-modal-image" src="img/portfolio/cabin.png" alt="">
+                <img class="img-fluid rounded mb-5 portfolio-modal-image" src="" alt="Portfolio image">
                 <!-- Portfolio Modal - Text -->
                 <p class="mb-5 portfolio-modal-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia
                   neque assumenda
@@ -381,6 +381,19 @@
         $('.portfolio-modal-desc').html(PImage.attr('desc'));
       });
     }());
+  </script>
+  <script async>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', function () {
+        navigator.serviceWorker.register('sw.js').then(function (registration) {
+          // Registration was successful
+          console.log('ServiceWorker registration successful with scope: ', registration.scope);
+        }, function (err) {
+          // registration failed :(
+          console.log('ServiceWorker registration failed: ', err);
+        });
+      });
+    }
   </script>
 </body>
 
